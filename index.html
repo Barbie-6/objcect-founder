@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI PROJECT C-135</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="background.jpg">
+   <center>
+       <h1 id="heading1" class="btn btn-success">AI Object Finder<br>
+           <span id="note">The input name which you will give should
+                match the names present in the CoCo model then only it will detect</span>
+       </h1>
+       <br>
+       <br>
+       <label>Object Name:</label>
+       <input id="object_name" placeholder="Enter the object name" class="form-control">
+       <br>
+       <button id="start" onclick="start();" class="btn btn-success">Start</button>
+       <br>
+       <span>
+           <h1 id="status" class="btn btn-danger"></h1>
+           <h1 id="object_found" class="btn btn-warning"></h1>
+       </span>
+
+   </center>
+    <script src="main.js"></script>
+</body>
+</html>
