@@ -22,7 +22,7 @@ if(status != ""){
         rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
         text(objects[i].label, objects[i].x + 15, objects[i].y + 15 );
         if(objects[i].label == object_name){
-            document.getElementById("object_found").innerHTML = objects[i].label + " found!";
+            document.getElementById("object_found").innerHTML = object_name + " found!";
             video.stop();
             objectDetector.detect(gotResults);
             synth = window.speechSynthesis;
@@ -30,7 +30,7 @@ if(status != ""){
             synth.speak(utterThis);
         }
         else{
-            document.getElementById("object_found").innerHTML = objects[i].label + " Not found!";
+            document.getElementById("object_found").innerHTML = object_name + " Not found!";
         }
     }
 }
